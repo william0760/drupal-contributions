@@ -19,7 +19,7 @@ services:
     overrides:
       environment:
         SIMPLETEST_BASE_URL: "http://drupal-contributions.lndo.site/"
-        SIMPLETEST_DB: "sqlite://localhost/tmp/db.sqlite"
+        SIMPLETEST_DB: "sqlite://localhost/:memory:"
         BROWSERTEST_OUTPUT_DIRECTORY: '/app/web/sites/simpletest/browser_output'
         BROWSERTEST_OUTPUT_BASE_URL: 'http://drupal-contributions.lndo.site'
         MINK_DRIVER_ARGS_WEBDRIVER: '["chrome", {"browserName":"chrome","chromeOptions":{"args":["--disable-gpu","--headless"]}}, "http://chrome:9515"]'        # Nightwatch
